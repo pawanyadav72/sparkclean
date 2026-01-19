@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Cleaning - Spark Clean</title>
+    <style>
+        body { font-family: Arial; margin:0; background:#f2f7fb; }
+        .navbar { background:#007bff; padding:15px; text-align:center; }
+        .navbar a { color:white; margin:0 15px; text-decoration:none; font-size:18px; }
+
+        .container {
+            width:40%; margin:50px auto; padding:30px; 
+            background:white; border-radius:10px; 
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        }
+        input, select {
+            width:100%; padding:12px; margin:10px 0;
+            border-radius:6px; border:1px solid #ccc;
+        }
+        .btn {
+            background:#28a745; color:white; padding:12px; 
+            display:block; text-align:center; border-radius:8px;
+            cursor:pointer; font-size:16px; font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+</div>
+
+<div class="container">
+    <h2>Book Cleaning Service</h2>
+
+    <label>Full Name</label>
+    <input id="name" type="text" placeholder="Enter Your Name">
+
+    <label>Select Service</label>
+    <select id="service">
+        <option>Home Deep Cleaning</option>
+        <option>Kitchen Cleaning</option>
+        <option>Bathroom Cleaning</option>
+        <option>Sofa Cleaning</option>
+        <option>Carpet Cleaning</option>
+    </select>
+
+    <label>Date</label>
+    <input id="date" type="date">
+
+    <label>Time</label>
+    <input id="time" type="time">
+
+    <button class="btn" onclick="saveBooking()">Confirm Booking</button>
+</div>
+
+<script>
+function saveBooking() {
+    const name = document.getElementById("name").value;
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+
+    localStorage.setItem("b_name", name);
+    localStorage.setItem("b_service", service);
+    localStorage.setItem("b_date", date);
+    localStorage.setItem("b_time", time);
+
+    window.location.href = "mybookings.html";
+}
+</script>
+
+</body>
+</html>

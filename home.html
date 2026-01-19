@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spark Clean - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#eff0e8;
+        }
+
+        /* Navbar */
+        .navbar {
+            background:#e5e109;
+            padding:15px;
+            text-align:center;
+            box-shadow:0 2px 6px rgba(6, 4, 120, 0.2);
+        }
+        .navbar a {
+            color:rgb(26, 84, 96);
+            text-decoration:none;
+            margin:0 15px;
+            font-size:18px;
+            font-weight:bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background:url('https://images.unsplash.com/photo-1581579188871-45ea61f2a0c8?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            color:rgb(50, 53, 50);
+            padding:120px 20px;
+            text-align:center;
+        }
+        .hero h1 {
+            font-size:48px;
+            margin-bottom:15px;
+            text-shadow:2px 2px 8px black;
+            animation: fadeIn 1.5s;
+        }
+        .hero p {
+            font-size:22px;
+            margin-bottom:30px;
+            animation: fadeIn 2s;
+        }
+        .btn {
+            background:#6ef805;
+            padding:14px 25px;
+            color:rgb(249, 247, 247);
+            border-radius:10px;
+            text-decoration:none;
+            font-size:18px;
+            font-weight:bold;
+            box-shadow:0 4px 12px rgba(0,0,0,0.3);
+            animation: fadeIn 2.5s;
+        }
+
+        @keyframes fadeIn {
+            from {opacity:0;}
+            to {opacity:1;}
+        }
+
+        /* Services Section */
+        .services {
+            padding:50px;
+            text-align:center;
+        }
+        .services h2 {
+            margin-bottom:20px;
+            font-size:32px;
+        }
+        .service-box {
+            display:inline-block;
+            width:250px;
+            background:rgb(245, 246, 239);
+            margin:15px;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0 3px 12px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+        .service-box:hover {
+            transform: scale(1.05);
+        }
+        .service-box h3 {
+            color:#007bff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="features.html">Features</a>
+    <a href="contact.html">Contact Us</a>
+</div>
+
+<!-- HERO SECTION -->
+<div class="hero">
+    <h1>Welcome to Spark Clean</h1>
+    <p>Premium Quality Cleaning for Homes & Offices</p>
+    <a class="btn" href="dashboard.html">Explore Dashboard</a>
+</div>
+
+<!-- SERVICES SECTION -->
+<div class="services">
+    <h2>Our Cleaning Services</h2>
+
+    <div class="service-box">
+        <h3>Home Cleaning</h3>
+        <p>Deep cleaning to make your home fresh and spotless.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>Office Cleaning</h3>
+        <p>Professional cleaning to maintain a healthy workplace.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>Bathroom Cleaning</h3>
+        <p>Remove stains, germs, and ensure hygiene.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>Kitchen Cleaning</h3>
+        <p>Oil-free, germ-free kitchen for your family.</p>
+    </div>
+</div>
+
+</body>
+</html>
